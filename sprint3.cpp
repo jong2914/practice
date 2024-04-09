@@ -25,7 +25,7 @@ int main() {
 	ofstream yy("my3.wav", ios::binary | ios::out);
 	if (!yy) return 666;  // 만일 파일이 열리지 않으면 프로그램을 끝낸다. 
 	yy.write(header, 44 * sizeof(char)); // 헤더를 쓴다. 
-	int main(i);{	// 1초마다 한 음씩 올라간다.
+	int main(i);{
 		if (i == 1) f = 440; // A
 		float t = 0;
 		for (int j = 0; j < fs[0]; j++, t += dt) {
@@ -40,7 +40,7 @@ int main() {
 		yy.write((char*)data, fs[0] * sizeof(short));
 		yy.write((char*)data, fs[0] * sizeof(short));
 		yy.write((char*)data, fs[0] * sizeof(short));
-		yy.write((char*)data, fs[0] * sizeof(short));// 1초 분량 쓴다.
+		yy.write((char*)data, fs[0] * sizeof(short));// 총 10초 분량.
 	}
 	yy.close();
 	return 1;
