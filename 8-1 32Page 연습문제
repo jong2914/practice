@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class A {
+public:
+	A() : ii(10) { M++; };
+	A(int x) : ii(x) {  M++; };
+	int ii;
+	static int M;
+
+};
+int A::M = 0;
+int main() {
+	A c, * bb[3];
+	c = A(100);
+	bb[0] = new A();
+	bb[1] = &c;
+	bb[2] = new A[5];
+	//cout << c.ii << " " << bb[0]->ii << endl;
+	cout << A::M << endl;
+}
