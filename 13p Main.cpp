@@ -24,6 +24,8 @@ int main() {
     std::cout << "Car Price: " << bab->getCarPrice(myCar) << "\n";
     std::cout << "Car Model Year: " << bab->getCarModelYear(myCar) << "\n";
     std::cout << "Car Fuel Efficiency: " << bab->getCarFuelEfficiency(myCar) << "\n";
+    std::cout << "Car Speed: " << bab->getCarSpeed(myCar) << "\n";
+    std::cout << "Car Wheels: " << bab->getCarWheels(myCar) << "\n";
 
     getchar();
 
